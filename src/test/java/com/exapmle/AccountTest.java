@@ -40,5 +40,5 @@ public class AccountTest {
         Assert.assertEquals(accountForTest.checkNameToEmboss(), expectedResult);
 
     }
-    
+
 }
