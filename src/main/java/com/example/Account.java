@@ -1,3 +1,5 @@
+package com.example;
+
 public class Account {
 
     private final String name;
@@ -12,10 +14,7 @@ public class Account {
             if (element == ' ') count++;
         }
 
-        if (name.length() < 3 | name.length() > 19 | name.startsWith(" ") | name.endsWith(" ") | count > 1) {
-            return false;
-        }
-        return true;
+        return !(name.length() < 3 | name.length() > 19 | name.startsWith(" ") | name.endsWith(" ") | count != 1);
     }
 
 }
